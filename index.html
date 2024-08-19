@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Thailand Strategies</title>
+    <link href="https://fonts.googleapis.com/css2?family=TH+Sarabun+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="infinity-container">
+    </div>
+
+    <div class="container">
+        <h1>Infinite Thailand Strategies</h1>
+        <div class="marquee">
+            <span>Infinite Thailand is now part of fafa.fund | Last updated: August 19, 2049</span>
+        </div>
+        <center>
+            <img src="https://web.archive.org/web/20090830075409/http://geocities.com/Heartland/Hills/5581/quickpic/paradise.gif" alt="Tropical Paradise">
+        </center>
+        <h2>Why Thailand:</h2>
+        <ul>
+            <li>XYZ</li>
+            <li>ABC</li>
+            <li>DEF</li>
+            <li>GHI</li>
+        </ul>
+        <h2>Latest 5 Infinite Thailand Strategies:</h2>
+        <ol>
+            <li>ITS Consulting Office</li>
+            <li>Patrice Gallery</li>
+            <li>xyz</li>
+            <li>abc</li>
+            <li>def</li>
+        </ol>
+        <h2>How do I get involved:</h2>
+        <ul>
+            <li>EOI form</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ul>
+        <h2 class="blink">Become one with the strategies</h2>
+        <p>Contact us at <a href="mailto:bb@fafa.fund">bb@fafa.fund</a> or fax 1-800-FAFA-ITS</p>
+        <hr>
+        <center>
+            <img src="https://web.archive.org/web/20090830075409/http://geocities.com/Heartland/Hills/5581/quickpic/construct.gif" alt="Under Construction">
+            <p>This site is always under construction</p>
+            <p>© 2049 Infinite Thailand | Made professionally by Harold Patrice</p>
+            <img src="https://web.archive.org/web/20090830075409/http://geocities.com/Heartland/Hills/5581/quickpic/counter.gif" alt="Visitor Counter">
+        </center>
+    </div>
+
+    <script>
+        const infinityContainer = document.querySelector('.infinity-container');
+        const symbolCount = 1000;
+
+        for (let i = 0; i < symbolCount; i++) {
+            const symbol = document.createElement('div');
+            symbol.className = 'infinity-symbol';
+            symbol.textContent = '∞';
+            symbol.style.left = `${Math.random() * 100}vw`;
+            symbol.style.animationDuration = `${15 + Math.random() * 20}s`; /* Slower drop speed */
+            symbol.style.top = `${Math.random() * 100}vh`; /* Start at different vertical positions */
+            symbol.style.fontSize = `${8 + Math.random() * 12}px`; /* Random font sizes */
+            infinityContainer.appendChild(symbol);
+        }
+    </script>
+</body>
+</html>
