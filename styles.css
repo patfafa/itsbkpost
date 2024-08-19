@@ -1,108 +1,74 @@
 body {
-    font-family: "TH Sarabun New", sans-serif;
-    background: #FFFFE0 url('https://web.archive.org/web/20090830075409/http://geocities.com/Heartland/Hills/5581/quickpic/back1.gif') repeat;
-    color: #000080;
+    font-family: "Comic Sans MS", "Arial", sans-serif; /* Popular fonts from the 90s */
+    background-color: #C0C0C0; /* Light gray background common in 90s sites */
+    color: #000000;
     margin: 0;
-    padding: 10px;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 0;
+    text-align: center;
 }
 
 .container {
-    max-width: 800px;
+    width: 800px; 
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    border: 2px solid #FF00FF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
+    background-color: #FFFFFF; 
+    border: 2px solid #0000FF; 
+    text-align: left;
 }
 
 h1 {
+    font-size: 40px;
+    color: #FF00FF; 
     text-align: center;
-    font-size: 48px;
-    color: #FF00FF;
-    text-shadow: 2px 2px #FFFF00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #0000FF;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #008000;
+    background-color: #FFFF00;
+    text-align: left;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #000000; 
 }
 
-ul, ol {
-    margin-left: 20px;
-    padding-left: 20px;
+p {
+    font-size: 18px;
+    color: #000080; 
+}
+
+a {
+    color: #FF0000; 
+    text-decoration: underline; 
 }
 
 img {
-    max-width: 100%;
-    height: auto;
     border: 2px solid #0000FF;
+    margin-bottom: 20px;
 }
 
-.blink {
-    animation: blinker 1s linear infinite;
-    color: #FF0000;
-    font-weight: bold;
+hr {
+    border: none;
+    height: 2px;
+    background-color: #FF00FF;
+    margin: 20px 0;
 }
 
-@keyframes blinker {
-    50% { opacity: 0; }
-}
-
-.marquee {
-    background-color: #000000;
-    color: #00FF00;
-    padding: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-/* Infinity symbols background animation */
-@keyframes drop {
-    0% { top: -10px; opacity: 0.2; }
-    100% { top: 100vh; opacity: 0.2; }
-}
-
-.infinity-symbol {
-    position: absolute;
-    font-size: 12px;
-    color: rgba(128, 0, 128, 0.3);
-    animation: drop linear infinite;
-    z-index: 0;
-    pointer-events: none; /* Prevent interaction with infinity symbols */
-}
-
-.infinity-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+table {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    pointer-events: none;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-    body { padding: 5px; }
-    h1 { font-size: 32px; }
-    h2 { font-size: 28px; }
-    .infinity-symbol { font-size: 10px; } /* Smaller infinity symbol for mobile */
+td {
+    padding: 10px;
+    border: 1px solid #0000FF; 
+    background-color: #E0E0E0; 
+}
+
+#dancing-gif {
+    margin-top: 20px;
 }
